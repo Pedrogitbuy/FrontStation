@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('login/redlogin.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área do body */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    background-position: center; /* Centraliza a imagem no body */
+
+}
+
+h2{
+    width: 100px;
+    height: 200px;
+    align-items: center;
+    font-size: 50px;
+}
+
+div.login-container{
+    height: 100vh;
+    width: 200px;
+}
+form#loginform{
+    width: 100px;
+    height: 300px;
+}
+label{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input#username{
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+}
+input#id{
+    font-size: 10px;
+}
+input#password{
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+}
+.btn:link,
+.btn:visited { 
+height: 100px;
+width: 100px;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: rgb(27, 27, 27);
+ padding: 10px 30px;
+ border: 1px solid;
+ border-radius: 1000px;
+ display: inline-block;
+ transition: all .2s;
+ position: relative;
+}
+
+.btn:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+.btn:active {
+ transform: translateY(-3px);
+}
+
+.btn::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ top: 0;
+ left: 0;
+ position: absolute;
+ z-index: -1;
+ transition: all .3s;
+}
+
+.btn:hover::after {
+ background-color: red;
+ transform: scaleX(1.4) scaleY(1.5);
+ opacity: 0;
+}
